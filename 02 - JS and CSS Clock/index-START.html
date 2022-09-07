@@ -12,6 +12,11 @@
         <div class="hand hour-hand"></div>
         <div class="hand min-hand"></div>
         <div class="hand second-hand"></div>
+
+        <div class="number top center" style="position: absolute;top: 0;">12</div>
+        <div class="number right center" style="position: absolute;height: 100%; display: flex; align-items: center; justify-content: flex-end;">3</div>
+        <div class="number left center" style="position: absolute;height: 100%; display: flex; align-items: center; justify-content: flex-start;">9</div>
+        <div class="number bottom center" style="position: absolute;bottom: 0;">6</div>
       </div>
     </div>
 
@@ -33,6 +38,17 @@
       min-height: 100vh;
       align-items: center;
     }
+
+    .center {
+      width: 100%;
+    }
+
+    .number {
+      font-size: 30px;
+      font-weight: 600;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
 
     .clock {
       width: 30rem;
@@ -58,8 +74,9 @@
 
     .hand {
       width: 50%;
-      height: 6px;
-      background: black;
+      height: 5px;
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(9,12,123,1) 36%, rgba(5,93,177,1) 62%, rgba(14,124,179,1) 77%, rgba(0,212,255,1) 100%);
       position: absolute;
       top: 50%;
       transform-origin: 100%;
